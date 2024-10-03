@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('ethan-hoover-eIVJAkj1uCs-unsplash.jpg');
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+
+.glass-container {
+    width: 350px;
+    height: 350px; 
+    position: relative;
+    z-index: 0;
+    background: rgba(49, 49, 49, 0.171);
+    box-shadow: 1px 1px 1px rgb(63, 62, 62);
+    border-radius: 10px;
+    border: 15px silver;
+    margin-top: 50px; 
+}
+
+
+.glass-container::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    border-radius: 5px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    z-index: -5;
+}
+
+.login-box {
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: -20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+input {
+    padding: 15px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid #ffffff25;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+input::placeholder {
+    color: #ffffffab;
+}
+
+input:focus {
+    outline: none;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 12px;
+    color: white;
+}
+
+.options input {
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.options a {
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+}
+
+button {
+    background: #ffffff;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: transparent;
+    color: white;
+    outline: 1px solid #fff;
+}
+
+p {
+    font-size: 13px;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+#register {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
